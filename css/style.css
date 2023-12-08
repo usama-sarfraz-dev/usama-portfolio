@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.hero {
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about,
+.portfolio,
+.contact {
+    padding: 80px 0;
+}
+.carousel-item img{
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* contact */
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center; /* Center align the content */
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    font-size: 36px; /* Increase the font size for emphasis */
+}
+
+.contact p {
+    font-size: 20px; /* Increase the font size for better readability */
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 20px; /* Increase the spacing between items */
+    font-size: 18px;
+}
+
+.contact ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Change link color to a more vibrant one */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.contact ul li a:hover {
+    color: #0056b3; /* Darken the link color on hover */
+}
