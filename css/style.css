@@ -13,7 +13,9 @@ body {
 
 .about,
 .portfolio,
-.contact {
+.contact,
+.testing,
+.skills {
     padding: 80px 0;
 }
 .carousel-item img{
@@ -30,36 +32,131 @@ body {
 
 /* contact */
 .contact {
-    background-color: #f4f4f4;
     padding: 50px 0;
-    text-align: center; /* Center align the content */
+    color: #000000;
+    text-align: center;
+}
+
+.contact-container {
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .contact h2 {
-    margin-bottom: 30px;
-    font-size: 36px; /* Increase the font size for emphasis */
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff9900;
 }
 
 .contact p {
-    font-size: 20px; /* Increase the font size for better readability */
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    color: #000000;
 }
 
-.contact ul {
-    list-style: none;
-    padding: 0;
+.contact .row {
+    display: flex;
+    justify-content: center;
 }
 
-.contact ul li {
-    margin-bottom: 20px; /* Increase the spacing between items */
-    font-size: 18px;
+.contact .col-md-6 {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Change link color to a more vibrant one */
-    transition: color 0.3s; /* Add a smooth color transition on hover */
+.contact .profile-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.contact ul li a:hover {
-    color: #0056b3; /* Darken the link color on hover */
+.contact .contact-info {
+    margin: 10px 0;
+    /* padding: 20px; */
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.contact .contact-info:hover {
+    transform: scale(1.05);
+}
+
+.contact li {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.contact li i {
+    font-size: 1em;
+    margin-right: 15px;
+    color: #003cff;
+}
+
+.contact li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact li a:hover {
+    text-decoration: underline;
+}
+
+.box-animation {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Skills */
+
+.skills {
+    padding: 50px 0;
+    background: linear-gradient(to right, #3498db, #6c5ce7); 
+    color: #fff; 
+}
+
+.section-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.skill-box {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 180px; 
+    padding: 20px;
+    border: 1px solid #ddd; 
+    transition: background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    background-color: #b37e7e;
+    transform: scale(1.05);
+}
+
+.skill-box i {
+    font-size: 2em;
+    color: #fff;
+    width: 50px;
+}
+
+.skill-info {
+    flex-grow: 1;
 }
