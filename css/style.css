@@ -85,11 +85,17 @@ body {
 
 .contact li {
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 1em;
     display: flex;
     align-items: center;
+    border: solid 1px green;
+    padding: 10px;
 }
-
+@media (max-width: 767px) {
+    .contact li {
+        margin-left: -2.3rem;
+    }
+}
 .contact li i {
     font-size: 1em;
     margin-right: 15px;
@@ -119,6 +125,7 @@ body {
         transform: translateY(0);
     }
 }
+
 
 /* Skills */
 
@@ -159,4 +166,13 @@ body {
 
 .skill-info {
     flex-grow: 1;
+}
+
+
+.image-frame {
+    border: 10px solid #17a2b8; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 0 20px rgba(23, 162, 184, 0.5); 
+    max-height: 500px;
 }
