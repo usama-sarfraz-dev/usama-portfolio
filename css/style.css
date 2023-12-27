@@ -10,6 +10,11 @@ body {
     text-align: center;
     padding: 100px 0;
 }
+.cv{
+    color: #a2aeba!important;
+    font-family: math;
+    margin-top: 5px;
+}
 
 .about,
 .portfolio,
