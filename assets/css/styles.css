@@ -556,3 +556,10 @@ img{
 		font-size: 5rem;
 	}
 }
+
+@media only screen and (max-width: 767px) {
+    .home__title{
+		font-size: 5rem !important;
+	}
+  }
+  
